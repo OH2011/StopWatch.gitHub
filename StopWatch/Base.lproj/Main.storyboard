@@ -18,56 +18,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpN-4Q-utK">
-                                <rect key="frame" x="166" y="119" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="miSec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-Ka-s5i">
-                                <rect key="frame" x="285" y="119" width="60" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.1726759145" blue="0.106123284" alpha="0.89557470029999997" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-Ka-s5i">
+                                <rect key="frame" x="299" y="119" width="32.5" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnV-NF-pHQ">
-                                <rect key="frame" x="55" y="119" width="41" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.4175470798" green="0.53488395" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnV-NF-pHQ">
+                                <rect key="frame" x="51.5" y="120" width="32.5" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnZ-Ni-dTu">
-                                <rect key="frame" x="168" y="264" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnZ-Ni-dTu">
+                                <rect key="frame" x="161.5" y="314" width="52" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Start!"/>
                                 <connections>
                                     <action selector="startButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pu4-7O-lVy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ots-HX-v71">
-                                <rect key="frame" x="167" y="435" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Stop!"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ots-HX-v71">
+                                <rect key="frame" x="166" y="405" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
                                 <connections>
-                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IrY-Z5-FY0"/>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5eJ-ju-Huf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpN-4Q-utK">
+                                <rect key="frame" x="171.5" y="120" width="32.5" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DpN-4Q-utK" firstAttribute="baseline" secondItem="nnV-NF-pHQ" secondAttribute="baseline" id="795-6d-fbb"/>
+                            <constraint firstItem="DpN-4Q-utK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MeJ-eg-Pb5"/>
+                            <constraint firstItem="DpN-4Q-utK" firstAttribute="width" secondItem="nnV-NF-pHQ" secondAttribute="width" id="QEa-cw-yzT"/>
+                            <constraint firstItem="nnV-NF-pHQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-120" id="ShB-Pf-vdl"/>
+                            <constraint firstItem="UGC-Ka-s5i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="127.5" id="Ue9-hE-AHq"/>
+                            <constraint firstItem="DpN-4Q-utK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-197.5" id="UrR-i5-2eA"/>
+                            <constraint firstItem="DpN-4Q-utK" firstAttribute="height" secondItem="nnV-NF-pHQ" secondAttribute="height" id="ahA-Vn-hCg"/>
+                            <constraint firstItem="UGC-Ka-s5i" firstAttribute="baseline" secondItem="nnV-NF-pHQ" secondAttribute="baseline" id="d96-C3-tX2"/>
+                            <constraint firstItem="Ots-HX-v71" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="86.5" id="fr4-7J-90R"/>
+                            <constraint firstItem="LnZ-Ni-dTu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="h5U-Et-Ffs"/>
+                            <constraint firstItem="UGC-Ka-s5i" firstAttribute="width" secondItem="nnV-NF-pHQ" secondAttribute="width" id="ke2-ix-Zxd"/>
+                            <constraint firstItem="Ots-HX-v71" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-2" id="oJP-We-V8P"/>
+                            <constraint firstItem="UGC-Ka-s5i" firstAttribute="height" secondItem="nnV-NF-pHQ" secondAttribute="height" id="uv9-gj-mWO"/>
+                            <constraint firstItem="LnZ-Ni-dTu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vcY-Ra-SvH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="miSecLabel" destination="UGC-Ka-s5i" id="2NG-3t-fzT"/>
                         <outlet property="minLabel" destination="nnV-NF-pHQ" id="aJT-Ep-bvd"/>
+                        <outlet property="resetButton" destination="Ots-HX-v71" id="iCs-Lg-T8L"/>
                         <outlet property="secLabel" destination="DpN-4Q-utK" id="Xym-D8-J5N"/>
                         <outlet property="startButton" destination="LnZ-Ni-dTu" id="1Et-uF-ohK"/>
-                        <outlet property="stopButton" destination="Ots-HX-v71" id="RzU-Bt-0d9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

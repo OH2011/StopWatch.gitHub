@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var secLabel: UILabel!
     @IBOutlet weak var miSecLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
-    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
     
     weak var timer: Timer!
     var startTime = Date()
@@ -75,8 +75,10 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func stopButtonTapped(_ sender: Any) {
-        timer.invalidate()
+    @IBAction func resetButtonTapped(_ sender: Any) {
+        if timer != nil {
+            self.timer.invalidate()
+        }
         
         minLabel.text = "00"
         secLabel.text = "00"
